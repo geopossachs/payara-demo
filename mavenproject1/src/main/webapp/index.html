@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+
+        <form action="./rest" method="POST">
+
+            <input name="citý" type="text"/>
+
+            <input name="zip" type="text"/>
+
+            <input type="submit" value="submit without CID" />           
+
+        </form>
+
+        <form action="./rest/wall" method="POST">
+
+            <input type="submit" value="begin Conversation" />           
+
+        </form>
+
+        <form action="./rest?cid=1" method="POST">
+
+            <input name="citý" type="text"/>
+
+            <input name="zip" type="text"/>
+
+            <input type="submit" value="submit with CID == 1" />           
+
+        </form>
+    </body>
+</html>
